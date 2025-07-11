@@ -5,6 +5,7 @@ export default defineConfig({
   title: "DEF01",
   // description: "A VitePress Site",
 
+  base: '/',
   srcDir: './docs',
   cleanUrls: true,
 

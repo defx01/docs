@@ -1,8 +1,19 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-    RewriteRule ^index\.html$ - [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule . /index.html [L]
-</IfModule>
+# Включаем модуль mod_rewrite
+RewriteEngine On
+
+# Указываем корневую директорию (если нужно)
+# Обычно не требуется, если .htaccess в корне сайта
+
+# Попытка отдать файл, директорию или .html-версию
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Если ничего не найдено — 404
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ - [R=404,L]
+
+# Устанавливаем индексный файл
+DirectoryIndex index.html
