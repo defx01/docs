@@ -53,7 +53,7 @@ export default defineConfig({
         // collapsed: false,
         items: [
           { text: 'Шпаргалка JS', link: '/js/cheatsheet' },
-          { text: 'Шпаргалка DOM', link: '/js/domcheatsheet' },
+          { text: 'Шпаргалка DOM', link: '/js/dom-cheatsheet' },
         ]
       },
       {
