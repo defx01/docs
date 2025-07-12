@@ -70,6 +70,13 @@ function test() {
 console.log(inner); // ReferenceError
 ```
 
+## Интерполяция
+
+```js
+const name = 'Анна';
+console.log(`Привет, ${name}!`); // "Привет, Анна!"
+```
+
 ## Операторы
 
 ### Арифметические операторы
@@ -206,15 +213,14 @@ const sum = function(a, b) {
 
 ### Стрелочные функции (ES6)
 
-`const sum = (a, b) => a + b;`
-
-### Многострочное тело
-
 ```js
+const sum = (a, b) => a + b;`
+
+// Многострочное тело
 const sum = (a, b) => {
     const result = a + b;
     return result;
-};
+}
 ```
 
 ### Параметры по умолчанию
@@ -225,7 +231,7 @@ function greet(name = "Гость") {
 }
 ```
 
-### Rest-параметры ???
+### Rest-параметры
 
 ```js
 function sum(...numbers) {
@@ -394,42 +400,19 @@ export default function multiply(a, b) {
 import multiply from './math.js';
 ```
 
-## Работа с DOM
-
-### Поиск элементов
-```js
-document.getElementById('id');
-document.querySelector('.class');
-document.querySelectorAll('div');
-```
-
-### События
-    
-```js
-element.addEventListener('click', handler);
-element.removeEventListener('click', handler);
-
-// Делегирование событий
-parent.addEventListener('click', (e) => {
-    if (e.target.matches('.child')) {
-        // Обработка
-    }
-});
-```
-
 ## Современные возможности
 
 ### Optional Chaining (ES2020)
 
-```js
-const street = user?.address?.street;
-Nullish Coalescing (ES2020)
+`const street = user?.address?.street;`
 
-const value = input ?? "default";
-BigInt (ES2020)
+### Nullish Coalescing (ES2020)
 
-const big = 1234567890123456789012345678901234567890n;
-```
+`const value = input ?? "default";`
+
+### BigInt (ES2020)
+
+`const big = 1234567890123456789012345678901234567890n;`
 
 ### Dynamic Import
 
@@ -468,21 +451,83 @@ throw new ValidationError("Неверный формат");
 
 ## Дата и время
 
-### Работа с Date
+### Создание даты
 
 ```js
+// Текущая дата и время
 const now = new Date();
-const specificDate = new Date(2023, 0, 31); // 31 января 2023
 
-// Форматирование
-now.toLocaleDateString(); // "31.01.2023"
-now.toISOString();       // "2023-01-31T12:00:00.000Z"
+// Конкретная дата
+const date1 = new Date('2023-12-31'); // ISO формат
+const date2 = new Date(2023, 11, 31); // год, месяц (0-11), день
+const date3 = new Date(2023, 11, 31, 23, 59, 59); // + часы, минуты, секунды
 ```
 
-### Преобразование
+### Получение компонентов даты
+
 ```js
-const json = JSON.stringify(obj);
-const obj = JSON.parse(json);
+const date = new Date();
+
+date.getFullYear();    // 2023 (год)
+date.getMonth();       // 0-11 (январь = 0)
+date.getDate();        // 1-31 (день месяца)
+date.getDay();         // 0-6 (день недели, воскресенье = 0)
+date.getHours();       // 0-23
+date.getMinutes();     // 0-59
+date.getSeconds();     // 0-59
+date.getMilliseconds();// 0-999
+date.getTime();        // timestamp (миллисекунды с 1.1.1970)
+```
+
+### Установка компонентов даты
+
+```js
+const date = new Date();
+
+date.setFullYear(2024);
+date.setMonth(5);      // июнь (0-11)
+date.setDate(15);
+date.setHours(12);
+date.setMinutes(30);
+date.setSeconds(0);
+```
+
+### Форматирование даты
+
+```js
+const date = new Date();
+
+// Локализованные строки
+date.toLocaleDateString();      // "31.12.2023"
+date.toLocaleTimeString();      // "23:59:59"
+date.toLocaleString();          // "31.12.2023, 23:59:59"
+
+// ISO и UTC формат
+date.toISOString();             // "2023-12-31T23:59:59.000Z"
+date.toUTCString();             // "Sun, 31 Dec 2023 23:59:59 GMT"
+
+// Кастомное форматирование
+`${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}`; // "31.12.2023"
+```
+
+### Арифметика с датами
+
+```js
+const date1 = new Date(2023, 0, 1);
+const date2 = new Date(2023, 11, 31);
+
+// Разница в миллисекундах
+const diff = date2 - date1;
+
+// Конвертация в дни
+const daysDiff = diff / (1000 * 60 * 60 * 24);
+
+// Добавление дней
+function addDays(date, days) {
+    const result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
+}
 ```
 
 ## Регулярные выражения
@@ -499,14 +544,15 @@ regex.test('string'); // true/false
 ## Хранение данных
 
 ### Web Storage
-```js
-localStorage.setItem('key', 'value');
-const data = localStorage.getItem('key');
-```
 
-### IndexedDB
 ```js
-// Сложное API, обычно используют обёртки типа Dexie.js
+// аналог куки
+localStorage.setItem('key', 'value');
+const localKey = localStorage.getItem('key');
+
+// сессия
+sessionStorage.setItem('key', 'value');
+const sessionKey = sessionStorage.getItem('key');
 ```
 
 ### Работа с асинхронностью
@@ -524,36 +570,3 @@ Promise.all([promise1, promise2])
 Promise.race([promise1, promise2])
     .then(firstResult => {});
 ```
-
-## Прочие полезные методы
-
-### Работа с числами
-
-```js
-Math.floor(3.7);    // 3
-Math.ceil(3.2);     // 4
-Math.round(3.5);    // 4
-Math.random();      // Случайное число 0-1
-Number.EPSILON;     // Минимальное число между 1 и следующим числом
-```
-
-### Работа со строками
-
-```js
-'hello'.includes('ell');   // true
-'hello'.startsWith('he');  // true
-'hello'.endsWith('lo');    // true
-'hello'.repeat(3);         // 'hellohellohello'
-' hello '.trim();          // 'hello'
-```
-
-## Лучшие практики
-
-- Используйте const по умолчанию, let когда нужно переопределять
-- Избегайте var
-- Используйте строгое сравнение (=== и !==)
-- Применяйте деструктуризацию для упрощения кода
-- Используйте стрелочные функции для сохранения контекста
-- Разбивайте код на модули
-- Обрабатывайте ошибки
-- Используйте современные возможности языка (опциональные цепочки, нулевое слияние)

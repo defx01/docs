@@ -45,8 +45,8 @@ export default defineConfig({
           { text: 'Шпаргалка PHP', link: '/php/cheatsheet' },
           { text: 'История развития', link: '/php/history' },
           { text: 'IDE PHP Storm', link: '/php/phpstorm' },
-          { text: '100 популярных функций', link: '/php/100f.md' },
-          { text: '300 популярных функций', link: '/php/300f.md' },
+          { text: '100 популярных функций', link: '/php/100f' },
+          { text: '300 популярных функций', link: '/php/300f' },
         ]
       },
       {
@@ -55,6 +55,7 @@ export default defineConfig({
         items: [
           { text: 'Шпаргалка JS', link: '/js/cheatsheet' },
           { text: 'Шпаргалка DOM', link: '/js/dom-cheatsheet' },
+          { text: '100 популярных функций', link: '/js/100f' },
         ]
       },
       {
@@ -84,13 +85,6 @@ export default defineConfig({
         // collapsed: false,
         items: [
           { text: 'Шпаргалка SQL', link: '/sql/cheatsheet' },
-        ]
-      },
-      {
-        text: 'Прочее',
-        // collapsed: false,
-        items: [
-          { text: 'Alt Codes', link: '/other/winaltcodes' },
         ]
       },
     ],
