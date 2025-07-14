@@ -267,33 +267,6 @@ try {
 }
 ```
 
-## Полезные функции
-
-### Дата и время
-```php
-date("Y-m-d H:i:s");    // Текущая дата
-time();                 // Текущий timestamp
-strtotime("+1 day");    // Преобразование строки в timestamp
-```
-
-### Работа с JSON
-
-```php
-json_encode($array);    // Массив → JSON
-json_decode($json, true); // JSON → массив
-```
-
-### Проверка типов
-
-```php
-is_int($var);
-is_float($var);
-is_string($var);
-is_array($var);
-is_object($var);
-is_null($var);
-```
-
 ## Суперглобальные массивы
 
 ```php

@@ -35,7 +35,7 @@ export default defineConfig({
         // collapsed: false,
         items: [
           { text: 'Как учить', link: '/english/howtolearn' },
-          { text: '100 популярных слов', link: '/english/100w' },
+          { text: 'Шпаргалка', link: '/english/cheatsheet' },
         ]
       },
       {
@@ -63,6 +63,7 @@ export default defineConfig({
         // collapsed: false,
         items: [
           { text: 'Шпаргалка C#', link: '/csharp/cheatsheet' },
+          { text: '100 популярных функций', link: '/csharp/100f' },
         ]
       },
       {

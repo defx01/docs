@@ -1,236 +1,183 @@
-# Шпаргалка по языку С#
+# Шпаргалка по C#
 
-## Основы синтаксиса
+## Базовые типы данных
 
-### Комментарии:
+| Тип        | Пример        | Размер   | Описание                  |
+|------------|---------------|----------|---------------------------|
+| `int`      | `int x = 10;` | 4 байта  | Целое число               |
+| `long`     | `long l = 99;`| 8 байт   | Длинное целое             |
+| `float`    | `float f = 3.14f;` | 4 байта | Число с плавающей точкой |
+| `double`   | `double d = 2.718;`| 8 байт | Точнее, чем `float`       |
+| `decimal`  | `decimal m = 9.99m;`| 16 байт | Точные фин. вычисления    |
+| `bool`     | `bool b = true;` | 1 байт  | Логический тип            |
+| `char`     | `char c = 'A';` | 2 байта | Один символ               |
+| `string`   | `string s = "Hi";` | -     | Строка                    |
+| `var`      | `var x = 42;` | -        | Неявный тип               |
+| `object`   | `object o = x;` | -       | Базовый тип для всех      |
 
-```csharp
-// Однострочный комментарий  
-/* Многострочный комментарий */  
-/// Документирующий комментарий (для XML-документации)
-```
-
-### Вывод в консоль:
-
-```csharp
-Console.WriteLine("Hello, World!");  // С переводом строки  
-Console.Write("Hello");             // Без перевода строки
-```
-
-### Ввод с консоли:
+## Условия
 
 ```csharp
-string input = Console.ReadLine();  
-int number = int.Parse(Console.ReadLine());
-```
+if (x > 0) { ... }
+else if (x == 0) { ... }
+else { ... }
 
-## Типы данных
-
-### Примитивные типы:
-
-```csharp
-int number = 10;            // Целое число  
-double pi = 3.14;           // Число с плавающей точкой  
-char symbol = 'A';          // Символ  
-string text = "Hello";      // Строка  
-bool isTrue = true;         // Логический тип
-```
-
-### Объявление переменных:
-
-```csharp
-var name = "Alex";          // Неявная типизация (определяется компилятором)  
-const double PI = 3.14;     // Константа
-```
-
-## Условные конструкции
-
-### if-else:
-
-```csharp
-if (age >= 18)  
-{  
-    Console.WriteLine("Взрослый");  
-}  
-else if (age > 12)  
-{  
-    Console.WriteLine("Подросток");  
-}  
-else  
-{  
-    Console.WriteLine("Ребёнок");  
-}
-```
-
-### switch-case:
-
-```csharp
-switch (day)  
-{  
-case 1:  
-    Console.WriteLine("Понедельник");  
-    break;  
-case 2:  
-    Console.WriteLine("Вторник");  
-    break;  
-default:  
-    Console.WriteLine("Другой день");  
-    break;  
+switch (value)
+{
+    case 1: Console.WriteLine("One"); break;
+    default: Console.WriteLine("Other"); break;
 }
 ```
 
 ## Циклы
 
-###  for:
+```csharp
+for (int i = 0; i < 10; i++) { ... }
+
+while (condition) { ... }
+
+do { ... } while (condition);
+
+foreach (var item in list) { ... }
+```
+
+## Методы
 
 ```csharp
-for (int i = 0; i < 10; i++)  
-{  
-    Console.WriteLine(i);  
+void SayHello(string name)
+{
+    Console.WriteLine($"Hello, {name}");
+}
+
+int Add(int a, int b) => a + b;
+```
+
+## Классы и ООП
+
+```csharp
+class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public Person(string name, int age) =>
+        (Name, Age) = (name, age);
+
+    public void SayHello() => Console.WriteLine($"Привет, я {Name}");
+}
+
+var p = new Person("Анна", 25);
+p.SayHello();
+```
+
+### Наследование и интерфейсы
+
+```csharp
+interface IAnimal
+{
+    void Speak();
+}
+
+class Dog : IAnimal
+{
+    public void Speak() => Console.WriteLine("Woof!");
 }
 ```
 
-### while / do-while:
+## Свойства (автоматически реализуемые)
 
 ```csharp
-while (x < 100)  
-{  
-    x *= 2;  
-}
-
-do  
-{  
-    Console.WriteLine("Выполнится хотя бы 1 раз");  
-} while (false);
+public string Name { get; set; }
+public int Age { get; init; } // только при создании
 ```
 
-### foreach:
+## Массивы и списки
 
 ```csharp
-foreach (var item in collection)  
-{  
-    Console.WriteLine(item);  
-}
-```
+int[] nums = { 1, 2, 3 };
+List<string> names = new() { "Alice", "Bob" };
 
-## Массивы и коллекции
-
-### Массивы:
-
-```csharp
-int[] numbers = new int[5] { 1, 2, 3, 4, 5 };  
-Console.WriteLine(numbers[0]);  // Доступ по индексу
-```
-
-### Списки (List):
-
-```csharp
-List<string> names = new List<string>() { "Alice", "Bob" };  
-names.Add("Charlie");  
+names.Add("Eve");
 names.Remove("Bob");
 ```
 
-## Функции (методы)
-
-### Объявление метода:
+## LINQ (требует `using System.Linq;`)
 
 ```csharp
-int Add(int a, int b)  
-{  
-    return a + b;  
+var even = nums.Where(x => x % 2 == 0).ToList();
+var namesStartingWithA = names.Where(n => n.StartsWith("A"));
+
+var sorted = names.OrderBy(n => n).ToList();
+var first = names.FirstOrDefault();
+var grouped = names.GroupBy(n => n.Length);
+var sum = nums.Sum();
+```
+
+## Атрибуты
+
+```csharp
+[Serializable]
+class Data { }
+
+[Obsolete("Use NewMethod instead")]
+void OldMethod() { }
+```
+
+## Пространства имён и файлы
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+namespace MyApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, world!");
+        }
+    }
 }
 ```
 
-### Опциональные параметры:
+## Работа с `var`, `dynamic`, `object`
 
 ```csharp
-void Greet(string name = "Гость")  
-{  
-    Console.WriteLine($"Привет, {name}!");  
+var x = 5;         // int
+object o = "text"; // любой тип
+dynamic d = 10;    // определяется во время выполнения
+```
+
+## Async / Await (асинхронность)
+
+```csharp
+async Task<int> GetNumberAsync()
+{
+    await Task.Delay(1000);
+    return 42;
 }
 ```
 
-### Лямбда-выражения:
-
-`Func<int, int, int> multiply = (x, y) => x * y;`
-
-## ООП в C#
-
-### Класс и объект:
+## Nullable-типы
 
 ```csharp
-class Person  
-{  
-    public string Name { get; set; }  // Свойство  
-    public int Age { get; set; }
-
-    public void SayHello()  
-    {  
-        Console.WriteLine($"Меня зовут {Name}");  
-    }  
-}
-
-var person = new Person { Name = "Иван", Age = 30 };  
-person.SayHello();
+int? x = null;
+if (x.HasValue) Console.WriteLine(x.Value);
 ```
 
-### Наследование:
+## Работа со строками
 
 ```csharp
-class Student : Person  
-{  
-    public string University { get; set; }  
-}
+string s = "Hello";
+string s2 = s.ToUpper();
+bool contains = s.Contains("el");
 ```
 
-## Обработка исключений
+## Форматирование строк
 
 ```csharp
-try  
-{  
-    int result = 10 / int.Parse(Console.ReadLine());  
-}  
-catch (DivideByZeroException)  
-{  
-    Console.WriteLine("Деление на ноль!");  
-}  
-catch (Exception ex)  
-{  
-    Console.WriteLine($"Ошибка: {ex.Message}");  
-}  
-finally  
-{  
-    Console.WriteLine("Выполнится в любом случае");  
-}
-```
-
-## Работа с файлами
-
-```csharp
-using System.IO;
-
-// Чтение из файла  
-string text = File.ReadAllText("file.txt");
-
-// Запись в файл  
-File.WriteAllText("output.txt", "Hello, File!");
-```
-
-## Дополнительно
-
-### LINQ (Language Integrated Query):
-
-```csharp
-var numbers = new List<int> { 1, 2, 3, 4, 5 };  
-var evenNumbers = numbers.Where(n => n % 2 == 0).ToList();
-```
-
-### Асинхронность (async/await):
-
-```csharp
-async Task DownloadDataAsync()  
-{  
-    await Task.Delay(2000);  // Имитация загрузки  
-    Console.WriteLine("Данные загружены!");  
-}
+string name = "Anna";
+int age = 30;
+string s = $"{name} is {age} years old";
 ```
