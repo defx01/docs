@@ -44,9 +44,8 @@ export default defineConfig({
         items: [
           { text: 'Шпаргалка PHP', link: '/php/cheatsheet' },
           { text: 'История развития', link: '/php/history' },
-          { text: 'IDE PHP Storm', link: '/php/phpstorm' },
           { text: '100 популярных функций', link: '/php/100f' },
-          { text: '300 популярных функций', link: '/php/300f' },
+          { text: 'IDE PHP Storm', link: '/php/phpstorm' },
         ]
       },
       {
@@ -89,6 +88,10 @@ export default defineConfig({
         ]
       },
     ],
+
+    outline: {
+      label: 'На этой странице',
+    },
 
     docFooter: {
       prev: false,

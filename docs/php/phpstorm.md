@@ -23,15 +23,15 @@
 `Ctrl + Shift + F` → Поиск по всему проекту
 
 
-## Поиск по двум словам
+## Поиск по двум словам через регулярку
 
 `(?i)(?=.*word1)(?=.*word2)` - word1 и word2 заменить на свои слова
 
-## Colors
+## Цвета для перенастройки темы
 
-red    - f92672  
-green  - a6e22e  
-blue   - 66d9ef  
-orange - fd971f  
-white  - f8f8f2  
-purple - ae81ff (number)  
+red    - #f92672  
+green  - #a6e22e  
+blue   - #66d9ef  
+orange - #fd971f  
+white  - #f8f8f2  
+purple - #ae81ff  
