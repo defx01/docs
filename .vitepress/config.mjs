@@ -87,6 +87,13 @@ export default defineConfig({
           { text: 'Шпаргалка SQL', link: '/sql/cheatsheet' },
         ]
       },
+      {
+        text: 'Разное',
+        items: [
+          { text: 'Таблица HTML Emoji', link: '/other/emoji' },
+          { text: 'Таблица Alt-кодов', link: '/other/alt-codes' },
+        ]
+      }
     ],
 
     outline: {
