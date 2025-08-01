@@ -117,6 +117,14 @@ ALTER TABLE table_name DROP COLUMN column_name;
 
 -- Переименовать таблицу
 ALTER TABLE old_name RENAME TO new_name;
+
+-- Переименовать столбец
+ALTER TABLE table RENAME COLUMN `token` TO `hash`;
+
+-- Изменить столбец
+ALTER TABLE users 
+CHANGE COLUMN username user_login VARCHAR(50) NOT NULL;
+
 ```
 
 ## Основные запросы

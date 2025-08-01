@@ -50,7 +50,9 @@
 
 Деструктуризация массива, конструкция `list()`
 
-Константы классов теперь поддерживают определение области видимости `private const PRIVATE_CONST = 4;`
+Константы классов поддерживают определение области видимости `private const PRIVATE_CONST = 4;`
+
+Константы классов можно наследовать и переопределять
 
 Псевдотип iterable `function iterator(iterable $iter)`
 
@@ -110,7 +112,7 @@ Attributes https://www.php.net/manual/ru/language.attributes.overview.php
 
 Объявление свойств в конструкторе `public function __construct(protected int $x, protected int $y = 0) {}`
 
-Union types (Объединение типов) `: array|string`
+Union types `(string|int $var): array|object`
 
 Альтернатива switch → `match()`
 
