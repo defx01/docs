@@ -14,20 +14,125 @@
 **[Подлежащее] + [вспом. глагол + not] + [глагол]?**
 > She does not (doesn't) like tea.
 
-## Времена (Tenses) — Полная таблица
 
-| Время               | Формула                           | Когда используется                          | Примеры                             |
-|---------------------|------------------------------------|----------------------------------------------|-------------------------------------|
-| **Present Simple**  | V / Vs                             | Факты, рутина                               | I work. She plays tennis.           |
-| **Present Continuous** | am/is/are + V-ing               | Прямо сейчас, временно                      | I am studying.                      |
-| **Present Perfect** | have/has + V3                      | Опыт, результат, связь с настоящим          | I have lost my keys.                |
-| **Past Simple**     | V2 / V-ed                          | Завершённое прошлое                         | They watched a movie yesterday.     |
-| **Past Continuous** | was/were + V-ing                   | В процессе в прошлом                        | I was sleeping at 10 PM.            |
-| **Past Perfect**    | had + V3                           | Действие до другого в прошлом               | She had left before I arrived.      |
-| **Future Simple**   | will + V                           | Простое будущее                             | I will call you later.              |
-| **Future Continuous**| will be + V-ing                   | Действие в процессе в будущем               | I will be working at 5 PM.          |
-| **Future Perfect**  | will have + V3                     | Действие завершится до момента в будущем    | I will have finished by 8 PM.       |
+## Времена (Tenses)
 
+| Время | Формула | Употребление |
+|-------|---------|-------------|
+| **Simple** |
+| Present Simple | V/Vs | Постоянные действия, факты, привычки |
+| Past Simple | V2/Ved | Завершенные действия в прошлом |
+| Future Simple | will + V | Спонтанные решения, прогнозы |
+| **Continuous** |
+| Present Continuous | am/is/are + Ving | Действия в момент речи, временные ситуации |
+| Past Continuous | was/were + Ving | Действия в процессе в прошлом |
+| Future Continuous | will be + Ving | Действия в процессе в будущем |
+| **Perfect** |
+| Present Perfect | have/has + V3 | Опыт, результат, незавершенный период |
+| Past Perfect | had + V3 | Действие перед другим в прошлом |
+| Future Perfect | will have + V3 | Действие завершится к моменту в будущем |
+| **Perfect Continuous** |
+| Present Perfect Continuous | have/has been + Ving | Действие длилось и продолжается |
+| Past Perfect Continuous | had been + Ving | Длительное действие перед другим в прошлом |
+| Future Perfect Continuous | will have been + Ving | Длительное действие, которое продолжается до момента в будущем |
+
+### Примеры:
+
+#### Present Simple
+
+`She teaches physics at Harvard.`
+
+- Глагол "teaches" (3л.ед.ч. от "teach")
+- Описание постоянной работы/факта
+- Маркеры: нет (по умолчанию для регулярных действий)
+
+#### Present Continuous
+
+`The researchers are analyzing the data now.`
+
+- "are analyzing" (am/is/are + Ving)
+- Действие в процессе в момент речи
+- Маркер: "now"
+
+#### Present Perfect
+
+`The team has completed the prototype.`  
+
+- "has completed" (have/has + V3)
+- Завершенное действие с важным результатом сейчас
+- Маркер: отсутствует (подразумевается "к этому моменту")
+
+#### Present Perfect Continuous
+
+`He's been revising his thesis all week.`  
+
+- "has been revising" (have/has been + Ving)
+- Действие началось в прошлом и продолжается
+- Маркер: "all week"
+
+#### Past Simple
+
+`Einstein published the theory in 1915.`  
+
+- "published" (V2 правильного глагола)
+- Конкретное завершенное действие в прошлом
+- Маркер: "in 1915"
+
+#### Past Continuous
+
+`They were conducting experiments when the blackout occurred.`  
+
+- "were conducting" (was/were + Ving)
+- Длительное действие, прерванное другим событием
+- Маркер: "when" + Past Simple
+
+#### Past Perfect
+
+`The patient had taken the medication before the symptoms appeared.`  
+
+- "had taken" (had + V3)
+- Действие, завершившееся до другого в прошлом
+- Маркер: "before" + Past Simple
+
+#### Past Perfect Continuous
+
+`She'd been working on the formula for months before making a breakthrough.`  
+
+- "had been working" (had been + Ving)
+- Длительное действие перед ключевым моментом в прошлом
+- Маркер: "for months before"
+
+#### Future Simple
+
+`The committee will announce the results tomorrow.`  
+
+- "will announce" (will + V)
+- Решение или прогноз о будущем
+- Маркер: "tomorrow"
+
+#### Future Continuous
+
+`This time next year we'll be launching the new product.`  
+
+- "will be launching" (will be + Ving)
+- Действие в процессе в конкретный будущий момент
+- Маркер: "this time next year"
+
+#### Future Perfect
+
+`By 2025, the project will have revolutionized the industry.`
+
+- "will have revolutionized" (will have + V3)
+- Действие завершится к определенному моменту в будущем
+- Маркер: "by 2025"
+
+#### Future Perfect Continuous
+
+`In June, they'll have been developing the software for 3 years.`  
+
+- "will have been developing" (will have been + Ving)
+- Подчеркивает продолжительность действия к будущему моменту
+- Маркер: "for 3 years"
 
 ## Модальные глаголы (Modals)
 
