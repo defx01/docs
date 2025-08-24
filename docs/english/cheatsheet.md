@@ -36,103 +36,6 @@
 | Past Perfect Continuous | had been + Ving | Длительное действие перед другим в прошлом |
 | Future Perfect Continuous | will have been + Ving | Длительное действие, которое продолжается до момента в будущем |
 
-### Примеры:
-
-#### Present Simple
-
-`She teaches physics at Harvard.`
-
-- Глагол "teaches" (3л.ед.ч. от "teach")
-- Описание постоянной работы/факта
-- Маркеры: нет (по умолчанию для регулярных действий)
-
-#### Present Continuous
-
-`The researchers are analyzing the data now.`
-
-- "are analyzing" (am/is/are + Ving)
-- Действие в процессе в момент речи
-- Маркер: "now"
-
-#### Present Perfect
-
-`The team has completed the prototype.`  
-
-- "has completed" (have/has + V3)
-- Завершенное действие с важным результатом сейчас
-- Маркер: отсутствует (подразумевается "к этому моменту")
-
-#### Present Perfect Continuous
-
-`He's been revising his thesis all week.`  
-
-- "has been revising" (have/has been + Ving)
-- Действие началось в прошлом и продолжается
-- Маркер: "all week"
-
-#### Past Simple
-
-`Einstein published the theory in 1915.`  
-
-- "published" (V2 правильного глагола)
-- Конкретное завершенное действие в прошлом
-- Маркер: "in 1915"
-
-#### Past Continuous
-
-`They were conducting experiments when the blackout occurred.`  
-
-- "were conducting" (was/were + Ving)
-- Длительное действие, прерванное другим событием
-- Маркер: "when" + Past Simple
-
-#### Past Perfect
-
-`The patient had taken the medication before the symptoms appeared.`  
-
-- "had taken" (had + V3)
-- Действие, завершившееся до другого в прошлом
-- Маркер: "before" + Past Simple
-
-#### Past Perfect Continuous
-
-`She'd been working on the formula for months before making a breakthrough.`  
-
-- "had been working" (had been + Ving)
-- Длительное действие перед ключевым моментом в прошлом
-- Маркер: "for months before"
-
-#### Future Simple
-
-`The committee will announce the results tomorrow.`  
-
-- "will announce" (will + V)
-- Решение или прогноз о будущем
-- Маркер: "tomorrow"
-
-#### Future Continuous
-
-`This time next year we'll be launching the new product.`  
-
-- "will be launching" (will be + Ving)
-- Действие в процессе в конкретный будущий момент
-- Маркер: "this time next year"
-
-#### Future Perfect
-
-`By 2025, the project will have revolutionized the industry.`
-
-- "will have revolutionized" (will have + V3)
-- Действие завершится к определенному моменту в будущем
-- Маркер: "by 2025"
-
-#### Future Perfect Continuous
-
-`In June, they'll have been developing the software for 3 years.`  
-
-- "will have been developing" (will have been + Ving)
-- Подчеркивает продолжительность действия к будущему моменту
-- Маркер: "for 3 years"
 
 ## Модальные глаголы (Modals)
 
@@ -245,71 +148,7 @@
 - **the** — определённый (конкретный предмет): the sun, the teacher
 - **no article** — перед неисчисляемыми и абстрактными понятиями:
   > I like music. Water is essential.
-
-
-## Типичные ошибки в английском языке (и как их избежать)
-
-### Неправильный порядок слов
-❌ *Always I go to school.*  
-✅ *I always go to school.*
-
-### Пропуск вспомогательных глаголов
-❌ *He going to the store.*  
-✅ *He is going to the store.*
-
-### Ошибки во временах
-❌ *I have seen him yesterday.*  
-✅ *I saw him yesterday.*
-
-### Перепутанные времена
-❌ *By the time he came, I eat dinner.*  
-✅ *By the time he came, I had eaten dinner.*
-
-### Не согласованы подлежащее и сказуемое
-❌ *He go to work every day.*  
-✅ *He goes to work every day.*
-
-### Слова-ловушки (false friends)
-❌ *I am very sensible.* *(= разумный?)*  
-✅ *I am very sensitive.* *(= чувствительный)*
-
-### Употребление "very" перед сильными прилагательными
-❌ *very fantastic*  
-✅ *absolutely fantastic* или просто *fantastic*
-
-### Буквальный перевод с родного языка
-❌ *I have 25 years.*  
-✅ *I am 25 years old.*
-
-### Молчаливые буквы произносятся
-❌ *[k]now*, *[b]omb*  
-✅ *know* (без "k"), *bomb* (без "b")
-
-### Неверное ударение
-❌ *adDRESS* (вместо *ADdress* — существительное)  
-✅ *ADdress* (noun), *adDRESS* (verb)
-
-### Пропуск артиклей
-❌ *He is doctor.*  
-✅ *He is a doctor.*
-
-### Отсутствие запятой после вводных слов
-❌ *However I didn’t go.*  
-✅ *However, I didn’t go.*
-
-### Слияние предложений (run-on sentences)
-❌ *I went home I was tired.*  
-✅ *I went home because I was tired.*  
-✅ *I went home. I was tired.*
-
-### Прямой порядок слов в вопросе
-❌ *You like coffee?*  
-✅ *Do you like coffee?*
-
-### Двойные отрицания
-❌ *I don’t need no help.*  
-✅ *I don’t need any help.*
-
+  
 
 ## Пример правильного сложного предложения:
 
@@ -372,26 +211,63 @@ Although I had never visited Italy before, I **felt comfortable** because I **ha
 
 ## Предлоги
 
-### Временные (Time)
+### Предлоги места
+| Предлог      | Перевод / Употребление                 | Пример |
+|-------------|---------------------------------------|--------|
+| at          | в, на, у (точка, место)               | at school – в школе |
+| in          | в, внутри                             | in the room – в комнате |
+| on          | на (поверхность)                       | on the table – на столе |
+| under       | под                                    | under the bed – под кроватью |
+| above       | выше, над (непосредственно не касается) | above the clouds – выше облаков |
+| below       | ниже                                   | below zero – ниже нуля |
+| between     | между (двумя)                          | between two houses – между двумя домами |
+| among       | среди (более двух)                     | among friends – среди друзей |
+| behind      | позади, за                             | behind the house – за домом |
+| in front of | перед                                  | in front of the car – перед машиной |
+| near        | рядом, около                           | near the station – рядом со станцией |
+| next to     | рядом с                                | next to the shop – рядом с магазином |
 
-- at (at 5 PM)
-- on (on Monday)
-- in (in July, in 2020)
-- since (since 2010)
-- for (for 2 years)
-- by (by next week)
-- before, after, during, until
+### Предлоги направления / движения
+| Предлог      | Перевод / Употребление                 | Пример |
+|-------------|---------------------------------------|--------|
+| to          | к, в (направление)                     | go to school – идти в школу |
+| into        | внутрь                                 | go into the room – войти в комнату |
+| out of      | из (движение наружу)                   | get out of the car – выйти из машины |
+| towards     | в направлении                          | walk towards the park – идти к парку |
+| from        | из, от                                 | from Russia – из России |
+| through     | через, сквозь                           | go through the tunnel – пройти через туннель |
+| across      | через (поверхность)                     | walk across the street – перейти улицу |
+| along       | вдоль                                   | walk along the river – идти вдоль реки |
 
-### Пространственные (Place)
+### Предлоги времени
+| Предлог      | Перевод / Употребление                 | Пример |
+|-------------|---------------------------------------|--------|
+| at          | в (точное время)                        | at 5 o’clock – в 5 часов |
+| in          | в (месяц, год, утро/вечер)             | in July – в июле; in the morning – утром |
+| on          | в (день/дату)                           | on Monday – в понедельник; on 1st May – 1 мая |
+| for         | в течение, на                            | for two hours – в течение двух часов |
+| since       | с (начала периода)                       | since 2020 – с 2020 года |
+| during      | в течение                               | during the meeting – во время встречи |
+| by          | к (сроку)                                | by 7 pm – к 7 вечера |
 
-- in, on, at
-- under, over, above, below
-- between, among
-- next to, near, behind, in front of
+### Предлоги причины, цели, сопутствия
+| Предлог      | Перевод / Употребление                 | Пример |
+|-------------|---------------------------------------|--------|
+| for         | для, ради                               | for you – для тебя |
+| because of  | из-за, по причине                        | because of the rain – из-за дождя |
+| due to      | из-за, вследствие                        | due to traffic – из-за пробок |
+| with        | с (сопутствие)                           | with friends – с друзьями |
+| without     | без                                     | without sugar – без сахара |
 
-### Причинные (Cause)
+### Другие полезные предлоги
+| Предлог      | Перевод / Употребление                 | Пример |
+|-------------|---------------------------------------|--------|
+| about       | о, об                                  | talk about sport – говорить о спорте |
+| of          | из, чей-то, принадлежность             | a piece of cake – кусок торта |
+| like        | как, подобно                            | look like a model – выглядеть как модель |
+| as          | как                                     | work as a teacher – работать учителем |
+| by          | кем-то (в пассиве)                       | written by him – написано им |
 
-- because of, due to, thanks to, owing to
 
 
 ## Вопросительные слова
@@ -429,88 +305,6 @@ Although I had never visited Italy before, I **felt comfortable** because I **ha
 - ⅓ – one third
 - ¾ – three quarters
 - 1⅕ – one and one fifth
-
-
-## Неправильные глаголы (Irregular Verbs)
-
-| Infinitive     | Past Simple     | Past Participle   |
-|----------------|------------------|--------------------|
-| be             | was/were         | been               |
-| become         | became           | become             |
-| begin          | began            | begun              |
-| break          | broke            | broken             |
-| bring          | brought          | brought            |
-| build          | built            | built              |
-| buy            | bought           | bought             |
-| catch          | caught           | caught             |
-| choose         | chose            | chosen             |
-| come           | came             | come               |
-| cost           | cost             | cost               |
-| cut            | cut              | cut                |
-| do             | did              | done               |
-| draw           | drew             | drawn              |
-| drink          | drank            | drunk              |
-| drive          | drove            | driven             |
-| eat            | ate              | eaten              |
-| fall           | fell             | fallen             |
-| feel           | felt             | felt               |
-| fight          | fought           | fought             |
-| find           | found            | found              |
-| fly            | flew             | flown              |
-| forget         | forgot           | forgotten          |
-| get            | got              | got/gotten (US)    |
-| give           | gave             | given              |
-| go             | went             | gone               |
-| grow           | grew             | grown              |
-| have           | had              | had                |
-| hear           | heard            | heard              |
-| hide           | hid              | hidden             |
-| hit            | hit              | hit                |
-| hold           | held             | held               |
-| keep           | kept             | kept               |
-| know           | knew             | known              |
-| learn          | learned/learnt   | learned/learnt     |
-| leave          | left             | left               |
-| lend           | lent             | lent               |
-| let            | let              | let                |
-| lie (лежать)   | lay              | lain               |
-| lose           | lost             | lost               |
-| make           | made             | made               |
-| mean           | meant            | meant              |
-| meet           | met              | met                |
-| pay            | paid             | paid               |
-| put            | put              | put                |
-| read           | read [red]       | read [red]         |
-| ride           | rode             | ridden             |
-| ring           | rang             | rung               |
-| rise           | rose             | risen              |
-| run            | ran              | run                |
-| say            | said             | said               |
-| see            | saw              | seen               |
-| sell           | sold             | sold               |
-| send           | sent             | sent               |
-| set            | set              | set                |
-| show           | showed           | shown/showed       |
-| shut           | shut             | shut               |
-| sing           | sang             | sung               |
-| sit            | sat              | sat                |
-| sleep          | slept            | slept              |
-| speak          | spoke            | spoken             |
-| spend          | spent            | spent              |
-| stand          | stood            | stood              |
-| steal          | stole            | stolen             |
-| swim           | swam             | swum               |
-| take           | took             | taken              |
-| teach          | taught           | taught             |
-| tell           | told             | told               |
-| think          | thought          | thought            |
-| throw          | threw            | thrown             |
-| understand     | understood       | understood         |
-| wake           | woke             | woken              |
-| wear           | wore             | worn               |
-| win            | won              | won                |
-| write          | wrote            | written            |
-
 
 ## Фразовые глаголы
 

@@ -36,6 +36,7 @@ export default defineConfig({
         items: [
           { text: 'Как учить', link: '/english/howtolearn' },
           { text: 'Шпаргалка', link: '/english/cheatsheet' },
+          { text: 'Неправильные глаголы', link: '/english/irr-verbs' },
         ]
       },
       {
